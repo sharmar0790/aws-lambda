@@ -1,6 +1,6 @@
 # AWS LAMBDA (Java)
 
-![Architecture](https://github.com/sharmar0790/archietecture-images/blob/main/sample-aws-lambda.png)
+![Architecture](https://github.com/sharmar0790/archietecture-images/blob/main/sample-java-basic.png)
 
 The project source includes function code and supporting resources:
 - `src/main` - A Java function.
