@@ -1,6 +1,6 @@
 # AWS LAMBDA SAMPLES (Java)
 
-![Architecture](https://github.com/sharmar0790/archietecture-images/blob/main/java-basic-servicemap.png)
+![Architecture](https://github.com/sharmar0790/archietecture-images/blob/main/sample-java-basic.png)
 
 The project source includes function code and supporting resources:
 - `src/main` - A Java function.
@@ -59,8 +59,6 @@ To invoke the function, run `invoke.sh`.
         "ExecutedVersion": "$LATEST"
     }
     "200 OK"
-
-![Service Map](/sample-apps/java-basic/images/java-basic-servicemap.png)
 
 # Configure Handler Class
 
