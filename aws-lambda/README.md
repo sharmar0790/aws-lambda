@@ -1,6 +1,6 @@
 # AWS LAMBDA (Java)
 
-![Architecture](https://github.com/sharmar0790/archietecture-images/blob/main/sample-java-basic.png)
+![Architecture](https://github.com/sharmar0790/archietecture-images/blob/main/sample-aws-lambda.png)
 
 The project source includes function code and supporting resources:
 - `src/main` - A Java function.
@@ -27,7 +27,7 @@ This setting enables the AWS CLI v2 to load JSON events from a file, matching th
 
 To create a new bucket for deployment artifacts, run `create-bucket.sh`.
 
-    $ ./1-create-bucket.sh
+    $ ./create-bucket.sh
     make_bucket: lambda-artifacts-a5e4xmplb5b22e0d
 
 # Deploy
@@ -37,7 +37,7 @@ To deploy the application, run `deploy.sh`.
     BUILD SUCCESSFUL in 1s
     Successfully packaged artifacts and wrote output template to file out.yml.
     Waiting for changeset to be created..
-    Successfully created/updated stack - java-basic
+    Successfully created/updated stack - aws-lambda
 
 This script uses AWS CloudFormation to deploy the Lambda functions and an IAM role. If the AWS CloudFormation stack that contains the resources already exists, the script updates it with any changes to the template or function code.
 
@@ -45,8 +45,8 @@ You can also build the application with Maven. To use maven, add `mvn` to the co
 
     $ ./deploy.sh mvn
     [INFO] Scanning for projects...
-    [INFO] -----------------------< com.example:java-basic >-----------------------
-    [INFO] Building java-basic-function 1.0-SNAPSHOT
+    [INFO] -----------------------< com.aws.lambda:aws-lambda >-----------------------
+    [INFO] Building aws-lambda-function 1.0-SNAPSHOT
     [INFO] --------------------------------[ jar ]---------------------------------
     ...
 
